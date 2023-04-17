@@ -2,4 +2,8 @@
     width: 100%;
     height: var(--navbar-height) ;
     background-color: var(--interted-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
 }
