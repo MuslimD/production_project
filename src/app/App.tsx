@@ -5,6 +5,7 @@ import { AboutPage } from "pages/AboutPage";
 import { MainPage } from "pages/MainPage";
 import { Suspense } from "react";
 import "./styles/index.scss";
+import { AppRouter } from "./provider/router";
 
 export const App = () => {
   const { theme, handleThema } = useThema ();
@@ -13,12 +14,7 @@ export const App = () => {
       <button onClick={handleThema}>Theme</button>
       <Link to={"/"}>Главная</Link>
       <Link to={"/about"}>О нас</Link>
-      <Suspense fallback={<div>...Loading</div>}>
-        <Routes>
-          <Route path={"/"} element={<MainPage/>} />
-          <Route path={"/about"} element={<AboutPage />} />
-        </Routes>
-      </Suspense>
+      <AppRouter />
     </div>
   );
 };
