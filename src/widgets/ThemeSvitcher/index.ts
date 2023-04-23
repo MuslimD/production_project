@@ -1,3 +1,3 @@
-import ThemeSvitcher from "./ui/ThemeSvitcher";
+import ThemeSvitcher from './ui/ThemeSvitcher';
 
-export {ThemeSvitcher}
+export { ThemeSvitcher };
