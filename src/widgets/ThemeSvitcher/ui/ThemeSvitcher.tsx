@@ -1,4 +1,4 @@
-import { useThema, Theme } from 'app/provider/themeProvider';
+import { useThema } from 'app/provider/themeProvider';
 import { FC } from 'react';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { Button, ButtonTheme } from 'shared/ui/Button/Button';
