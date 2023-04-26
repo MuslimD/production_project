@@ -12,7 +12,7 @@ export const App = () => {
         <div className={classNames('app', {}, [theme])}>
             <Suspense fallback="">
                 <NavBar />
-                <div className="content_page">
+                <div className="content-page">
                     <SideBar />
                     <AppRouter />
 
