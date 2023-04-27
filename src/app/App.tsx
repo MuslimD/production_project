@@ -4,10 +4,15 @@ import { AppRouter } from 'app/provider/router';
 import { NavBar } from 'widgets/NavBar';
 import './styles/index.scss';
 import { SideBar } from 'widgets/SideBar';
-import { Suspense } from 'react';
+import { Suspense, useEffect } from 'react';
 
 export const App = () => {
     const { theme } = useThema();
+    useEffect(() => {
+        if (Math.random() < 0.5) {
+            throw new Error();
+        }
+    }, []);
     return (
         <div className={classNames('app', {}, [theme])}>
             <Suspense fallback="">
