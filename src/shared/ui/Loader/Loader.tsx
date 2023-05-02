@@ -1,12 +1,15 @@
 import { classNames } from 'shared/lib/classNames/classNames';
 import './Loader.scss';
 
-interface iclasName{
-className?: string
+interface LoaderProps {
+    className?: string;
 }
 
-export default function Loader({ className }: iclasName) {
-    return (
-        <div className={classNames('lds-dual-ring', {}, [className])} />
-    );
-}
+export const Loader = ({ className }: LoaderProps) => (
+    <div className={classNames('lds-ellipsis', {}, [className])}>
+        <div />
+        <div />
+        <div />
+        <div />
+    </div>
+);
