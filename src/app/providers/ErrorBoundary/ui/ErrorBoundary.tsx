@@ -39,7 +39,7 @@ class ErrorBoundary
             );
         }
 
-        return <>{children}</>;
+        return { children };
     }
 }
 
