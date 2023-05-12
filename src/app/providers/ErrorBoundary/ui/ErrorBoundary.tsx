@@ -38,8 +38,9 @@ class ErrorBoundary
                 </Suspense>
             );
         }
-
-        return { children };
+        /* eslint-disable no-alert, react/jsx-no-useless-fragment */
+        return <>{children}</>;
+        /* eslint-enable no-alert, react/jsx-no-useless-fragment */
     }
 }
 
