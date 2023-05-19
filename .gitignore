@@ -2,3 +2,5 @@
 node_modules
 .idea
 /styrybook-static
+.loki/report.html
+.loki/report.json
