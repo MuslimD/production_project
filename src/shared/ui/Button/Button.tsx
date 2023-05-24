@@ -31,11 +31,11 @@ export const Button: FC<ButtonProps> = (props) => {
         size,
         ...otherProps
     } = props;
-const mods:Record<string, boolean> = {
-     [cls[theme]]: true ,
-     [cls.square]: square,
-     [cls[size]]: true
-} 
+    const mods:Record<string, boolean> = {
+        [cls[theme]]: true,
+        [cls.square]: square,
+        [cls[size]]: true,
+    };
     return (
         <button
             type="button"

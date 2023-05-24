@@ -34,9 +34,8 @@ export const Sidebar = ({ className }: SidebarProps) => {
                 square
                 size={SizeButton.L}
             >
-                {collapsed? ">" : "<"}
+                {collapsed ? '>' : '<'}
             </Button>
-
 
             <div className={cls.items}>
                 <AppLink
