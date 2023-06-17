@@ -30,11 +30,11 @@ export const Modal = (props: ModalProps) => {
 
     const timerRef = useRef<ReturnType<typeof setTimeout>>();
     const { theme } = useTheme();
-useEffect(() => {
-    if(isOpen) {
-        setIsMounted(true)
-    }
-}, [isOpen])
+    useEffect(() => {
+        if (isOpen) {
+            setIsMounted(true);
+        }
+    }, [isOpen]);
     const closeHandler = useCallback(() => {
         if (onClose) {
             setIsClosing(true);
@@ -72,9 +72,9 @@ useEffect(() => {
         [cls.isClosing]: isClosing,
     };
 
-if(isOpen && !isMounted) {
-    return null
-}
+    if (isOpen && !isMounted) {
+        return null;
+    }
 
     return (
         <Portal>

@@ -2,6 +2,7 @@
   "Тестовый пример": "Test example",
   "Перевод": "Translate",
   "Главная страница": "Main page",
+  "Введите текст": "vvedite text",
   "Язык": "English",
   "новый перевод": "новый перевод",
   "Страница не найдена": "Page not found",
@@ -14,5 +15,7 @@
   "Короткий язык": "En",
   "Войти": "Login",
   "increment": "increment",
-  "decrement": "decrement"
+  "decrement": "decrement",
+  "Введите username": "Введите username",
+  "Введите пароль": "Введите пароль"
 }

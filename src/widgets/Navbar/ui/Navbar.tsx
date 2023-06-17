@@ -3,8 +3,8 @@ import { useTranslation } from 'react-i18next';
 import { Modal } from 'shared/ui/Modal/Modal';
 import React, { useCallback, useState } from 'react';
 import { Button, ButtonTheme } from 'shared/ui/Button/Button';
-import cls from './Navbar.module.scss';
 import { LoginModal } from 'features/AuthByUsername';
+import cls from './Navbar.module.scss';
 
 interface NavbarProps {
     className?: string;
@@ -23,7 +23,7 @@ export const Navbar = ({ className }: NavbarProps) => {
     }, []);
 
     return (
-        
+
         <div className={classNames(cls.Navbar, {}, [className])}>
             <Button
                 theme={ButtonTheme.CLEAR_INVERTED}
@@ -32,7 +32,7 @@ export const Navbar = ({ className }: NavbarProps) => {
             >
                 {t('Войти')}
             </Button>
-            <LoginModal isOpen={isAuthModal} onClose={onCloseModal}/>
+            <LoginModal isOpen={isAuthModal} onClose={onCloseModal} />
         </div>
     );
 };
