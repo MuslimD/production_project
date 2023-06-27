@@ -5,8 +5,8 @@ import { Input } from 'shared/ui/Input/Input';
 import { useDispatch, useSelector } from 'react-redux';
 import { memo, useCallback } from 'react';
 import { loginActions, loginReducer } from 'features/AuthByUsername/model/slice/loginSlice';
-import { loginByUserName }
-    from 'features/AuthByUsername/model/services/loginByUserName/loginByUserName';
+import { loginByUsername }
+    from 'features/AuthByUsername/model/services/loginByUsername/loginByUsername';
 import { Text, TextTheme } from 'shared/ui/Text/Text';
 import { DynemicModuleLoader, ReducersList }
     from 'shared/lib/components/DynemicModuleLoader/DynemicModuleLoader';
@@ -48,7 +48,7 @@ const LoginForm = memo(({ className }: LoginFormProps) => {
     );
 
     const onLoginClick = useCallback(() => {
-        dispatch(loginByUserName({ username, password }));
+        dispatch(loginByUsername({ username, password }));
     }, [dispatch, password, username]);
 
     return (
